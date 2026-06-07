@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style1.css">
+</head>
+<body id="container5">
+	<main>
+		<div id="divform">
+			<h3>Plan your Dream Vacation</h3>
+			<p>Fill out the form and our team will connect with you.</p>
+			<form action="/submit" method="POST" enctype="multipart/form-data" id="form">
+				<label for="name">Name:</label>
+				<input id="name" type="text" minlength="2" maxlength="20" placeholder="Enter Name" required>
+				<label for="email">Email:</label>
+				<input id="email"type="email" placeholder="Enter Email Address"  
+				pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+				required>
+				<label for="phone">Phone:</label>
+				<input id="phone" type="tel" placeholder="Enter Phone Number" pattern="[0-9]{10}" required>
+				<label>Destination:</label>
+				<select type="city">
+				<option>Goa</option>
+				<option>Mumbai</option>
+				<option>Rajasthan</option>
+				<option>Kerla</option>
+				<option>Munnar</option>
+				<option>Delhi</option>
+				<option>Rishikesh</option>
+				<option>Himalaya</option>
+				</select>
+				
+				<label for="NumberofTravelers">Number of Travelers:</label>
+				<input id="NumberofTravelers" type="number" placeholder="Add Number of Travelers"required>
+				<label for="travelDate">Travel Date:</label>
+				<input id="travelDate"type="date" required>
+				<label for="message">Message:</label>
+				<textarea id="message" rows="5" cols="20"></textarea>
+				<label>Note:</label>
+				<textarea rows="5" cols="10" readonly disabled>Please fill all the required fields. do not submit empty form.</textarea>
+				<button type="submit" id="enquiryBtn1">Send Enquiry</button>
+				<a href="Navbar_UI_Build.html" id="enquiryBtn2">Home</a>
+			</form>
+		</div>
+	</main>
+</body>
+</html>

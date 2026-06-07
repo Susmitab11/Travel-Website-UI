@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+	<header>
+		<nav id="navbar">
+				<h1>Wanderly</h1>
+				<ul id="links">
+					<li><a href="Navbar_UI_Build.html" class="item">Home</a></li>
+					<li><a href="about.html" class="item">About</a></li>
+					<li><a href="packages.html" class="item">packages</a></li>
+					<li><a href="contact.html" class="item">Contact</a></li>
+					<li><a href="gallery.html" class="item">Gallery</a></li>
+				</ul>
+				<a href="contact.html"id="btn">Enquiry Now</a>
+			</nav>
+	</header>
+	<main>
+		<section>
+			<div id="contactHero">
+				<h2>Contact Us</h2>
+				<p class="contactHeroPara">Have questions about our travel packages or need assistance planning your trip? 
+				We'd love to hear from you.</p>
+			</div>
+		</section>
+		<section id="contactInfo">
+			<div class="contactInfoBox">
+				<h4>Address</h4>
+				<p>Wanderly</p>
+				<p>Seawood, Navi Mumbai, Maharshtra</p>
+			</div>
+			<div class="contactInfoBox">
+				<h4>Phone</h4>
+				<p>+91 9876543210</p>
+			</div>
+			<div class="contactInfoBox">
+				<h4>Email</h4>
+				<p>info@wanderly.com</p>
+			</div>
+			<div class="contactInfoBox">
+				<h4>Working hours</h4>
+				<p>Monday - Saturday</p>
+				<p>9.00 A.M - 7.00 P.M</p>
+			</div>
+		</section>
+		<section id="contactFormImage">
+			<div id="contactForm">
+				<h5>Send Us a Message</h5>
+				<form action="/submit" method="POST" enctype="multipart/form-data" id="form">
+					<label for="name">Name:</label>
+					<input id="name" type="text" minlength="2" maxlength="20" placeholder="Enter Name" required>
+					<label for="email">Email:</label>
+					<input id="email"type="email" placeholder="Enter Email Address"  
+					pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+					required>
+					<label for="phone">Phone:</label>
+					<input id="phone" type="tel" placeholder="Enter Phone Number" pattern="[0-9]{10}" required>
+					<label for="destination">Destination Interested In?</label>
+					<input type="text" id="destination" minlength="2" maxlength="20" placeholder="Enter Destination" required>
+					<label for="message">Message</label>
+					<textarea id="message" rows="5" cols="20"></textarea>
+					<button type="btn" id="ContactBtn">Send Message</button>
+				</form>
+			</div>
+			<div id="contactImage">
+				<img class="contactImg"src="https://media.istockphoto.com/id/2169942179/photo/happy-mature-couple-exploring-a-charming-european-city-together.jpg?s=612x612&w=0&k=20&c=IbWfoCsR4_GWJvMZ2RSmSsad7oo-c0CB6Mq7IHqCUjw=">
+			</div>
+		</section>
+		<section >
+			<div id="whyContactHeading">
+				<h5>Why Contact US?</h5>
+			</div>
+			<div id="whyContactUs">
+				
+				<div class="whyContactUsBox">
+					<i id="travelConsult"class="fa-solid fa-user-tie"></i>
+					<h6>Travel Consultation</h6>
+					<p>Get Guidance from travel experts.</p>
+				</div>
+				<div class="whyContactUsBox">
+					<i id="packageInfo"class="fa-solid fa-file-lines"></i>
+					<h6>Package Information</h6>
+					<p>Learn more about destinations and pricing.</p>
+				</div>
+				<div class="whyContactUsBox">
+					<i  id="customTours"class="fa-solid fa-route"></i>
+					<h6>Custom Tours</h6>
+					<p>Create a trip tailored to your needs.</p>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div id="locateUsHeading">
+				<h2>Locate Us</h2>
+			</div>
+			<div id="mapTolocate">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30177.14555317248!2d72.99753885481597!3d19.013410809385356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c398ec33dd03%3A0x808c3605636fda23!2sSeawoods%2C%20Navi%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1780638757755!5m2!1sen!2sin" width="600" height="450" 
+				 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</section>
+	</main>
+	<footer id="packageFooter">
+			<div id="footerContainer">
+			<div id="brandSection">
+				<h3>Wanderly</h3>
+				<p>From serene mountains to vibrant city life, 
+				explore tourism spots filled with adventure, relaxation, and stories waiting to be lived.</p>
+				<p id="mail"><a href="https://gmail.com">wanderlytravelagency.com</a></p>
+				<p id="phNumber">+9845552185</p>
+			</div>
+			<div id="quickLinks">
+				<h3>Quick Links</h3>
+				<a class="footerLink1" href="home.html">Home</a>
+				<a class="footerLink1" href="contact.html">Contact</a>
+				<a class="footerLink1" href="packages.html">Packages</a>
+				<a class="footerLink1" href="about.html">About</a>
+			</div>
+			<div id="socialLinks">
+				<h3>Social Links</h3>
+				<a class="footerLink2" href="https://instagram.com">Instagram</a>
+				<a class="footerLink2" href="https://facebook.com">Facebook</a>
+				<a class="footerLink2" href="https://youtube.com">Youtube</a>
+			</div>
+			<div id="imageContainer">
+				<img class="footerImg" src="https://www.shutterstock.com/image-vector/road-trip-family-vacation-by-600nw-2740651779.jpg">
+			</div>
+		</div>
+		<div>
+			<p id="lastPara">2026 Wanderly. All rights reserved.</p>
+		</div>
+		</footer>
+</body>
+</html>

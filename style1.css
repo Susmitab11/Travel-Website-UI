@@ -1,0 +1,867 @@
+body{
+	margin:0;
+}
+*{
+	box-sizing:border-box;
+}
+html,body{
+	overflow-x:hidden;
+	margin:0;
+}
+#main1{
+	padding-top:100px;
+}
+/* Navbar Section */
+#navbar{
+	position:fixed;
+	top:0;
+	z-index:1000;
+	width:100%;
+	background:#00CED1;
+	padding:10px;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	flex-wrap:wrap;
+}
+#links{
+	display:flex;
+	list-style:none;
+	gap:20px;
+	padding:0;
+	margin:0;
+}
+.item{
+	background-color:#FFEBCD;
+	padding:10px;
+	border-radius:20px;
+	color:#800000;
+	text-decoration:none;
+	margin:0;
+	transition:all 0.3s ease;
+	
+}
+.item:hover{
+	background:#483D8B;
+	color:white;
+	
+}
+#btn{
+	background-color:#FFEBCD;
+	padding:10px;
+	border-radius:20px;
+	color:#800000;
+	border:none;
+	text-decoration:none;
+	transition:all 0.3s ease;
+}
+#btn:hover{
+	background:#483D8B;
+	color:white;
+}
+
+/* Navbar Ends*/
+
+/* Multiple cards Section start */
+
+#container1{
+	display:grid;
+	grid-template-columns:repeat(4,1fr);
+	grid-template-rows:500px 200px;
+	padding:10px;
+	gap:10px;
+}
+.box{
+	transition:all 0.3s ease;
+	opacity:0.5;
+}
+.box:hover{
+	transform:scale(1.02);
+	opacity:1;
+
+}
+#img1{
+	grid-column:1/5;
+}
+
+.img{
+	object-fit:cover;
+	width:100%;
+	height:100%;
+	border-radius:15px;
+}
+/* Multiple cards Section End */
+
+/* Pricing Section start */
+#container2,#container6{
+	border-radius:10px;
+	background-color:#F5F5F5;
+}
+
+.box1{
+	display:flex;
+	justify-content:center;
+	gap:20px;
+	margin:10px 10px;
+}
+.style{
+	text-align:center;
+}
+.box2{
+	margin-bottom:20px;
+	width:250px;
+	height:450px;
+	text-align:center;
+	background-color:#FFFAF0;
+	border-radius:10px;
+	transition:all 0.3s ease;
+	box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+.box2:hover{
+	transform:scale(1.02)
+	translateY(-10px);
+}
+
+p{
+	color:grey;
+}
+.bookNowbtn{
+	padding:10px;
+	border-radius:20px;
+	background-color:#483D8B;
+	color:white;
+	text-decoration:none;
+	border:none;
+	transition:all 0.3s ease;
+}
+.bookNowbtn:hover{
+	background:#00CED1;
+	color:black;
+}
+#pricingHeading::before{
+	content:"✦ ";
+}
+#pricingHeading::after{
+	content:" ✦";
+}
+/* Pricing Section End */
+
+#container3{
+	display:grid;
+	grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+	grid-auto-rows:minmax(250px, auto);
+	gap:10px;
+	padding:20px;
+	/*justify-items:center;
+		align-items:center;	*/
+	/* instead of using two properties, you can use one property.*/
+	place-items:center; /* shortcut for the two properties */
+	place-content:center;
+}
+.box3{	
+	height:auto;
+	padding:10px;
+	border-radius:10px;
+	transition:all 0.3s ease;
+}
+.box3:hover{
+	transform:scale(1.05)
+	translateY(-10px);
+}
+.img1{
+	width:100%;
+	height:250px;
+	object-fit:cover;
+	border-radius:10px;
+	display:block;
+}
+#heading2{
+	text-align:center;
+	font-family:"Times New Roman";
+	background:#00CED1;
+	padding:20px;
+	margin:0;
+	margin-bottom:10px;
+}
+#body2{
+	background:#E6E6FA;
+}
+/* Packages Start */
+#container4{
+	display:grid;
+	grid-template-columns:200px 1fr;
+	grid-auto-rows:minmax(110px,auto);
+	
+	grid-template-areas:
+	"header header"
+	"sidebar main"
+	"footer footer";
+}
+header{
+	grid-area:header;
+}
+aside{
+	grid-area:sidebar;
+	width:100%;
+}
+main{
+	grid-area:main;
+
+}
+footer{
+	grid-area:footer;
+	
+}
+#productCard{
+	display:grid;
+	grid-template-columns:repeat(4,1fr);
+	grid-auto-rows:minmax(250px,auto);
+	gap:15px;
+	padding:15px;
+}
+.pcard{
+	border-radius:10px;
+	background:#F5F5F5;
+	box-shadow:0 8px 25px rgba(0,0,0,0.3);
+	position:relative;
+}
+.pimg{
+	object-fit:cover;
+	width:100%;
+	height:150px;
+	border-radius:10px 10px 0 0;
+}
+.productname{
+	margin-top:5px;
+	margin-left:10px;
+}
+
+.bookNowbutton{
+	display:block;
+	margin:auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	background:#4B0082;
+	border:none;
+	padding-left:15px;
+	padding-right:15px;
+	padding-top:5px;
+	padding-bottom:5px;
+	border-radius:5px;
+	color:white;
+	transition:all 0.4s ease;
+	box-shadow:0 4px 15px rgba(0,0,0,0.2);
+}
+.bookNowbutton:hover{
+	background:#00CED1;
+	color:black;
+}
+
+.productPrice{
+	color:grey;
+}
+.productPlace{
+	font-size:1.5em;
+	color:#4B0082;
+}
+.bookNowlink{
+	text-decoration:none;
+}
+
+.durationBadge{
+	position:absolute;
+	top:10px;
+	left:15px;
+	background:#FFFFFF;
+	padding:6px;
+	font-weight:bold;
+	border-radius:5px;
+}
+/* packages Ends */
+
+ /* sidebar starts */
+#sidebar{
+	background:#FFF8DC;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	padding-left:10px;
+}
+#sideHeading{
+	text-align:center;
+}
+.destin{
+	display:block;
+}
+#filterBtn{
+	display:block;
+	margin:20px auto;
+	padding:5px 50px 5px 50px;
+	background:#4B0082;
+	border-radius:5px;
+	color:white;
+	transition:all 0.4s ease;
+	box-shadow:0 4px 15px rgba(0,0,0,0.2);
+	border:none;
+}
+#filterBtn:hover{
+	background:#00CED1;
+	color:black;
+}
+ /* Sidebar Ends */
+
+#packageFooter{
+	 background-color:#F5F5F5;
+ }
+#container5{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background-color:#E6E6FA;
+}
+#divform{
+	width:100%;
+	margin:auto;
+	max-width:500px;
+	height:auto;
+	padding:20px;
+	border-radius:10px;
+	background-color:#F5F5F5;
+}
+#form{
+	display:flex;
+	flex-direction:column;
+	gap:15px;
+	padding:20px;
+	border-radius:10px;
+	background-color:#FFFAF0;
+	
+}
+div > h3,
+div > .features{
+	text-align:center;
+}
+
+form > input, 
+form > select{
+	padding:10px;
+	border-radius:10px;
+	border:none;
+}
+
+#enquiryBtn1{
+	padding:10px;
+	width:200px;
+	margin:auto;
+	border-radius:15px;
+	border:none;
+	background-color:#483D8B;
+	color:white;
+	transition:all 0.3s ease;
+	
+}
+#enquiryBtn1:hover{
+	background:#00CED1;
+	color:black;
+}
+#enquiryBtn2{
+	padding:10px;
+	width:200px;
+	margin:auto;
+	border-radius:15px;
+	border:none;
+	background:#FF0000;
+	color:white;
+	text-decoration:none;
+	text-align:center;
+	transition:all 0.3s ease;
+}
+#enquiryBtn2:hover{
+	background:#66CDAA;
+}
+
+/* Footer Section Start */ 
+#footerContainer{
+	display:flex;
+	gap:25px;
+	align-items:flex-start;
+	justify-content:space-around;
+	padding:20px;
+	width:100%;
+}
+#quickLinks,#socialLinks{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	gap:10px;
+}
+.footerLink1, .footerLink2{
+	text-decoration:none;
+}
+#lastPara{
+	text-align:center;
+	padding:10px;
+	background:#00CED1;
+	margin:0;
+}
+#brandSection{
+	max-width:300px;
+}
+#phNumber::before{
+	content:"☎ ";
+}
+#phNumber{
+	text-decoration:none;
+}
+#mail::before{
+	content:"✉ ";
+}
+
+#imageContainer{
+	width:200px;
+	height:200px;
+}
+.footerImg{
+	object-fit:cover;
+	width:100%;
+	height:200px;
+}
+/* Footer Section End */ 
+
+/* About Page start */
+#aboutHeroSection{
+	width:100%;
+	height:500px;
+	margin-top:100px;
+	background:linear-gradient(
+	rgba(0,0,0,0.4),
+	rgba(0,0,0,0.4)
+	),	
+	url("https://assets.insuremytrip.com/wp-content/uploads/2024/12/06160852/hero-image_1440x400_travel-tips.jpg");
+	background-size:cover;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+#heroContent,.aboutHeroPara{
+	text-align:center;
+	color:white;
+}
+#aboutHeroBtn{
+	padding:5px;
+	border-radius:5px;
+	background:#FF8C00;
+	color:white;
+	transition:all 0.5s ease;
+	border:none;
+}
+#aboutHeroBtn:hover{
+	background:#DC143C;
+}
+
+#aboutMainContent{
+	width:100%;
+	height:auto;
+}
+#aboutBtn{
+	padding:5px;
+	background:#FF8C00;
+	border:none;
+	border-radius:5px;
+	transition:all 0.5s ease;
+	color:white;
+}
+#aboutBtn:hover{
+	background:#DC143C;
+}
+#aboutOurStory{
+	display:flex;
+	gap:30px;
+	margin:20px;
+}
+.ourStoryImg{
+	width:300px;
+	height:200px;
+}
+.storyImage{
+	object-fit:cover;
+	width:100%;
+	height:200px;
+	border-radius:10px;
+}
+.ourStoryContent{
+	width:100%;
+	height:200px;
+}
+#aboutChooseUsSection{
+	width:100%;
+	height:auto;
+}
+#missionVision{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	gap:20px;
+}
+.missionVisionbox{
+	width:45%;
+	min-height:200px;
+	margin:5px;
+	padding:5px;
+}
+#missionBox{
+	background-color:#87CEFA;
+	border:1px solid blue;
+	color:white;
+	text-align:center;
+}
+#VisionBox{
+	background-color:#90EE90;
+	border:1px solid green;
+	color:white;
+	text-align:center;
+}
+#plane{
+	color:#00BFFF;
+}
+#hotel{
+	color:#B22222;
+}
+#mountain{
+	color:green;
+}
+#heart{
+	color:#FF1493;
+}
+#family{
+	color:#FF4500;
+}
+#tours{
+	color:#4169E1;
+}
+#chooseUsContainer{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	gap:20px;
+	margin:10px;
+}
+.chooseUsBox{
+		width:100%;
+		height:auto;
+		text-align:center;
+		background:#FFFAF0;
+		border-radius:10px;
+		box-shadow:0 4px 15px rgba(0,0,0,0.2);
+}
+#chooseUsHeading{
+	text-align:center;
+	font-size:20px;
+}
+#aboutServiceSection{
+	/*display:flex;
+	justify-content:center;
+	align-items:center;
+	width:100%;
+	height:auto;
+	margin:20px;
+	gap:20px;*/
+	
+	display:grid;
+	grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
+	gap:20px;
+	justify-items:center;
+	margin:20px;
+}
+.serviceBox{
+	border:1px solid yellow;
+	padding:20px;
+	border-radius:7px;
+	background:#FFFFE0;
+}
+.serviceBox i{
+    font-size:35px;
+    margin-bottom:15px;
+}
+#ourServiceHeading{
+	text-align:center;
+}
+#aboutPopularDestination{
+	display:grid;
+	grid-template-columns:repeat(3,1fr);
+	grid-auto-rows:250px;
+	border:1px solid black;
+	
+}
+/* About Page End */
+
+/*contact page start */ 
+#contactHero{
+	background:linear-gradient(
+	rgba(0,0,0,0.4),
+	rgba(0,0,0,0.4)
+	),
+	url("https://deeptravels.co.in/uploads/2025/07/mini-maldives-in-india-best-island-destinations-and-travel-guide.webp");
+	width:100%;
+	height:500px;
+	margin-top:100px;
+	background-size:cover;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+}
+#contactHero > h2{
+	color:white;
+	font-size:3em;
+	margin:0;
+}
+#contactInfo{
+	width:100%;
+	height:auto;
+	display:flex;
+	justify-content:center;
+	gap:20px;
+	
+}
+.contactInfoBox{
+	width:150px;
+	height:auto;
+	padding:5px;
+	margin:10px;
+	background-color:#FFFAF0;
+	border-radius:10px;
+	text-align:center;
+	box-shadow:0 4px 15px rgba(0,0,0,0.2);
+	transition:all 0.5s ease;
+	
+}
+.contactInfoBox:hover{
+	transform:scale(1.1);
+	background:#FFE4B5;
+}
+.contactHeroPara{
+	color:white;
+}
+#contactInfo p{
+	color:black;
+	font-size:1rem;
+}
+#contactFormImage{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	gap:30px;
+	}
+#contactForm{
+	width:400px;
+	margin:20px;
+	border:1px solid white;
+}
+#contactImage{
+	width:100;
+	max-width:400px;
+}
+.contactImg{
+	border-radius:8px;
+	height:auto;
+	width:100%;
+	display:block;
+}
+#contactForm > h5{
+	font-size:1.5em;
+	margin:0;
+	text-align:center;
+}
+#ContactBtn{
+	padding:8px;
+	border-radius:8px;
+	background:#1E90FF;
+	color:white;
+	border:none;
+}
+#whyContactUs{
+	display:flex;
+	justify-content:center;
+	gap:40px;
+	margin:10px;
+}
+#whyContactHeading{
+	text-align:center;
+	font-size:1.5rem;
+}
+.whyContactUsBox{
+	width:100%;
+	height:auto;
+	text-align:center;
+	background:#F8F8FF;
+	border-radius:8px;
+}
+#whyContactUs h6{
+	font-size:1rem;
+	margin-top:10px;
+}
+#whyContactUs p{
+	margin-top:0;
+}
+#whyContactUs i{
+	font-size:40px;
+	margin:15px;
+}
+#travelConsult{
+	color:#00BFFF;
+}
+#packageInfo{
+	color:#FF69B4;
+}
+#customTours{
+	color:#4B0082;
+}
+#locateUsHeading{
+	text-align:center;
+}
+#mapTolocate{
+	display:flex;
+	justify-content:center;
+}
+#mapTolocate iframe{
+	border-radius:8px;
+	margin:10px;
+	
+}
+/* Contact page End */
+
+
+/* Responsive Design */
+
+/* Multiple card section */
+
+@media (max-width:768px){
+	#container1,#productCard{
+		grid-template-columns:1fr;
+		grid-template-rows:auto;
+	}
+	#img1{
+		grid-column:auto;
+		height:300px;
+	}
+	#navbar{
+		flex-direction:column;
+		align-items:center;
+		gap:15px;
+		padding:15px;
+	}
+	#main1{
+		padding-top:280px;
+	}
+	#links{
+		display:flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+		justify-content:center;
+		align-items:center;
+		padding:0;
+		margin:0;
+		list-style:none;
+	}
+	.item{
+		display:block;
+		text-align:center;
+		padding:12px 20px;
+	}
+	.box1{
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+	}
+	.box2{
+		width:90%;
+		max-width:350px;
+		height:auto;
+	}
+	.bookNowbtn{
+		margin-bottom:15px;
+		padding:15px;
+	}
+	#footerContainer{
+		flex-direction:column;
+		align-items:center;
+		gap:25px;
+	}
+	#brandSection, #quickLinks, #socialLinks{
+		width:100%;
+	}
+	#divform{
+		width:95%;
+		padding:15px;
+	}
+	#form{
+		padding:15px;
+	}
+	
+	#container4{
+		padding-top:190px;
+	}
+	#container4{
+		display:grid;
+		grid-template-columns:1fr;
+		grid-template-areas:
+		"header"
+		"sidebar" 
+		"main"
+		"footer";
+	}
+	#aboutOurStory{
+		flex-direction:column;
+		text-align:center;
+	}
+	
+	.ourStoryImg,
+	.ourStoryContent{
+		width:100%;
+		height:auto;
+	}
+	#missionVision{
+		flex-direction:column;
+	}
+
+	.missionVisionbox{
+		width:100%;
+	}
+	#chooseUsContainer{
+		flex-direction:column;
+		align-items:center;
+	}
+
+	.chooseUsBox{
+		width:90%;
+	}
+	#aboutServiceSection{
+		display:grid;
+		grid-template-columns:1fr;
+	}
+	#contactInfo{
+		flex-wrap:wrap;
+	}
+
+	.contactInfoBox{
+		width:45%;
+	}
+	#contactFormImage{
+		flex-direction:column;
+	}
+
+	#contactForm,
+	#contactImage{
+		width:90%;
+		max-width:600px;
+	}
+	#whyContactUs{
+		flex-direction:column;
+		align-items:center;
+	}
+
+	.whyContactUsBox{
+		width:90%;
+	}
+}
